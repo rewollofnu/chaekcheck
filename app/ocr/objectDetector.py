@@ -1,4 +1,3 @@
-
 from ultralytics import YOLO
 
 from PIL import Image
@@ -29,9 +28,3 @@ class ObjectDetector:
 
         # show_images(cropped_img_list)
         return cropped_img_list
-
-
-
-
-
-
