@@ -49,7 +49,7 @@ class TextReader():
         # print(f"Geometric Mean Probability of the sequence: {geometric_mean_prob}")
         return generated_text, geometric_mean_prob
     
-    def read_title_boxes(self, title_boxes: list[Image]):
+    def get_title(self, title_boxes: list[Image]):
         title_text_list = []
         title_prob_list = []
 
@@ -60,9 +60,9 @@ class TextReader():
 
         return title_text_list, title_prob_list
     
-    def get_title(self, title_boxes: list[Image]):
-        title_text_list, title_prob_list = self.read_title_boxes(title_boxes)
-        return title_text_list, title_prob_list
+    # def get_title(self, title_boxes: list[Image]):
+    #     title_text_list, title_prob_list = self.read_title_boxes(title_boxes)
+    #     return title_text_list, title_prob_list
 
 if __name__ == "__main__":
     pass
